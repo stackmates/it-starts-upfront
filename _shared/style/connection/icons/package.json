@@ -1,0 +1,12 @@
+{
+  "name": "ionicons",
+  "version": "0.0.1",
+  "style": "ionicons.css",
+  "keywords": [
+    "css",
+    "ionicons"
+  ],
+  "author": {
+    "name": "@howzus Matt Mischewski"
+  }
+}

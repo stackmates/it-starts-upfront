@@ -1,0 +1,36 @@
+<!doctype html>
+<!-- Specify the AngularJS app to use -->
+<html lang="en" ng-app="app">
+<head>
+  <meta charset="utf-8">
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name=viewport content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+  <title>Dreamineering</title>
+  <!-- The css is copied into www/assets/css/main.min.css by the copy task -->
+  <link rel="stylesheet" href="assets/css/main.css" />
+    <!-- This script will be bundled by the browserify task into build then www/js/app.js depending on gulp environment -->
+  <script src="assets/js/app.js"></script>
+</head>
+<body ng-cloak slide-menu-wrapper >
+
+  <nav class='SlideNav' role="navigation" slide-menu-left >
+    <div class='SlideNav-scrollableContainer' ui-view="nav"></div>
+  </nav>
+
+  <div class="SlideNav-overlay" slide-menu-return="left"></div>
+
+  <div class="ContentContainer SiteMain">
+    <div id="alert" class='alert' ui-view="alert"></div>
+    <div id="header" classs='header' ui-view="header"></div>
+
+    <div class='Logo u-z10' slide-menu-control="left">
+      <div class='u-paddingAl' logo></div>
+    </div>
+
+    <div id="main" ui-view></div>
+
+  </div>
+
+</body>
+</html>

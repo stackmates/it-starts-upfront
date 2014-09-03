@@ -1,0 +1,36 @@
+<div class='__content content content--{{$state.current.name}}' role='main'>
+
+  <section class='__section __section--{{ content.section }} {{ content.mindset }} {{content.section}}'>
+
+    <form class="Form Form--inline Form--simple"
+      no-validate accept-charset="utf-8"
+      name="loginForm" ng-submit="login()">
+
+        <div class="Form-item">
+          <label class="Form-label" for="username">Username</label>
+          <input type="text"
+            class="Form-input"
+            placeholder="username"
+            ng-model="user.nick"
+            required>
+        </div>
+        <div class="Form-item">
+          <label class="Form-label" for="password">Password</label>
+          <input type="password"
+            class="Form-input"
+            placeholder="password"
+            ng-model="user.password"
+            required>
+        </div>
+        <div class="Form-item Form-item--full">
+          <input type="submit" class="Button" value="Login">
+          <button class="Button Button--quiet" ui-sref='app.register'>Register</button>
+        </div>
+    </form>
+
+  </section>
+
+</div>
+
+
+

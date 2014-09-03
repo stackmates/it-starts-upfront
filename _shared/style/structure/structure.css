@@ -1,0 +1,58 @@
+
+
+:root {
+
+  breakpoint-pocket:                    min 28em;
+  breakpoint-purse:                     min 480px;
+  breakpoint-sofa:                      min 768px;
+  breakpoint-office:                    min 1024px;
+
+  --bodyFontSizePocket:                 18px;
+  --bodyFontSizePurse:                  20px;
+  --bodyFontSizeSofa:                   22px;
+  --bodyFontSizeOffice:                 24px;
+
+  --t-BannerHeadingPocket:              30px;
+  --t-BannerHeadingPurse:               34px;
+  --t-BannerHeadingSofaAndUp:           40px;
+  --t-BannerHeadingOffice:              50px;
+
+  --sectionPaddingPocket:               4em 0 4.4em;
+  --sectionPaddingPurseAndUp:           4em 0 4.4em;
+  --sectionPaddingSofaAndUp:            6em 0 6em;
+  --sectionPaddingOfficeAndUp:          3em 0 3.6em;
+
+  /* Z INDEX */
+  --zIndex-1:   100;
+  --zIndex-2:   200;
+  --zIndex-3:   300;
+  --zIndex-4:   400;
+  --zIndex-5:   500;
+  --zIndex-6:   600;
+  --zIndex-7:   700;
+  --zIndex-8:   800;
+  --zIndex-9:   900;
+  --zIndex-10: 1000;
+
+
+  --z-site-nav:                       var(--zIndex-8);
+  --z-site-nav__bar:                  var(--zIndex-9);
+  --z-nav-overlay:                    var(--zIndex-3);
+
+  /* SITE NAV */
+  --topbar-HEIGHT:                    80px;
+
+
+  --banner-BOTTOM-HEIGHT:             260px;
+
+  --footer-container-MB:              300px;
+
+
+  --spaceSmall:                       5px;
+  --spaceMedium:                      10px;
+  --spaceLarge:                       20px;
+  --spaceXlarge:                      40px;
+
+}
+
+

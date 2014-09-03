@@ -1,0 +1,16 @@
+{
+  "name": "drmg",
+  "version": "0.0.1",
+  "description": "place",
+  "main": "index.html",
+  "style": "structure.css",
+  "keywords": [
+    "css",
+    "space",
+    "location",
+    "boundaries"
+  ],
+  "author": {
+    "name": "@howzus Matt Mischewski"
+  }
+}

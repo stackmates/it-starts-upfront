@@ -1,0 +1,208 @@
+
+/* Useful Concise Resources
+ *
+ * https://www.codeschool.com/courses/fundamentals-of-design
+ * http://www.google.com/design/spec/style/color.html#color-ui-color-palette
+ * http://designcode.io/
+ *
+ */
+
+/*
+ * COLOR GUIDE WITH HSL
+ * use http://css-tricks.com/examples/HSLaExplorer/
+ *
+ * Hue color wheel.
+ * - 0o and 360o are reds
+ * - 120o are greens,
+ * - 240o are blues.
+ *
+ * Saturation
+ * - 0% is completely denatured (grayscale).
+ * - 100% is fully saturated (full color).
+ *
+ * Lightness
+ * - 0% is completely dark (black).
+ * - 100% is completely light (white).
+ * - 50% is average lightness.
+ *
+ * alpha
+ * - Opacity/Transparency value.
+ * - 0 is fully transparent.
+ * 1 is fully opaque.
+*/
+
+:root {
+
+  /* Most important select your fonts also have a component of structure */
+  --title-font-family:            "Source Sans Pro", Geneva, Verdana, sans-serif;
+  --banner-font-family:           var(--title-font-family);
+  --text-font-family:             "Droid Serif", Georgia, "Times New Roman", serif;
+
+
+  --text-color:                   var(--midnightblue);
+  --textDivider:                  var(--text-color, .12);
+  --textHintText:                 var(--text-color, .26);
+  --textSecondaryIcons:           var(--text-color, .54);
+  --textColor:                    var(--text-color, .87);
+
+  /* Contrast for dark background */
+  --text-color--light:            var(--white);
+
+  /* Messaging colors */
+  --error :                       #f00;
+  --valid :                       #089e00;
+  --warning :                     #fff664;
+  --information :                 #000db5;
+
+  /* emotion */
+  --positive:                     var(--pomegranate);
+  --body-bg-color:                rgba(255, 255, 255, 1);
+  --border-color:                 #f4f2f0;
+
+
+  --color-brand:                  var(--midnightblue);
+
+
+  /* THEME */
+
+  --color-dreamer--VISION:        var(--amethyst);
+  --color-dreamer--CULTURE:       var(--wisteria);
+  --color-dreamer:                var(--wisteria);
+
+  --color-engineer--SUBSTANCE:    var(--carrot);
+  --color-engineer--STRUCTURE:    var(--alizarin);
+  --color-engineer--CONNECTION:   var(--pomegranate);
+  --color-engineer:               var(--pomegranate);
+
+  --color-realist--PROBLEM:       var(--emerland);
+  --color-realist--VALUE:         var(--nephritis);
+  --color-realist--FACTS:         var(--greensea);
+  --color-realist:                var(--greensea);
+
+  --color-philosopher-QUESTION:   var(--peterriver);
+  --color-philosopher:            var(--peterriver);
+
+  --color-narrator:               var(--concrete);
+
+
+  --overlay-bg-color:             rgba(10, 90, 92, 0.7);
+
+
+
+  --overlay-bg-box-shadow:        inset 0px 0px 115px 0px #000000;
+  --border-radius--notification:  2px;
+
+  /* Modules */
+  --color-nav-header:              var(--white);
+
+
+  /* ANIMATION ******************************************/
+
+  --animationDuration:            0.25s;
+
+
+  /* LINKS **********************************************/
+
+  /* links colors */
+  --color-link:                   var(--midnightblue);
+  --color-linkPseudo:             inherit;
+  --color-hover-linkPseudo:       var(--color-linkPseudo);
+
+  --link-underlineThickness:      0.08em;
+  --link-underlinePadding:        0.01em;
+
+}
+
+/* COLOR MODIFIER CLASSES */
+
+.u-paletteBody {
+  background: var(--body-bg-color);
+  color: var(--text-color);
+}
+.u-colorBrand {
+  color: var(--color-brand);
+}
+
+/* States of mind */
+.u-colorTextPhilosopher {
+  color: var(--color-philosopher);
+}
+.u-colorTextDreamer {
+  color: var(--color-dreamer);
+}
+.u-colorTextRealist {
+  color: var(--color-realist);
+}
+.u-colorTextEngineer {
+  color: var(--color-engineer);
+}
+
+
+.home, .brand {
+  background-color: var(--color-brand);
+  color: var(--text-color--light);
+}
+
+.greyPalette {
+  background-color: var(--grey300);
+}
+
+
+.philosopher {
+  background-color: var(--blue500);
+  color: var(--text-color--light);
+}
+.philosopherQuestions {
+  background-color: var(--blue600);
+  color: var(--text-color--light);
+}
+
+/* palette from main */
+.dreamer {
+  background-color: var(--color-dreamer);
+  color: var(--text-color--light);
+}
+.dreamVision {
+  background-color: var(--deepPurple600);
+  color: var(--text-color--light);
+}
+.dreamCulture {
+  background-color: var(--deepPurple700);
+  color: var(--text-color--light);
+}
+
+
+.engineer {
+  background-color: var(--color-engineer);
+  color: var(--text-color--light);
+  background-size: cover;
+}
+.engineerSubstance {
+  background-color: var(--red400);
+  color: var(--text-color--light);
+}
+.engineerStructure {
+  background-color: var(--grey600);
+  color: var(--text-color);
+}
+.engineerConnection {
+  background-color: var(--red800);
+  color: var(--text-color--light);
+}
+
+.realist {
+  background-color: var(--color-realist);
+  color: var(--text-color--light);
+  background-size: cover;
+}
+.realityValue {
+  background-color: var(--green400);
+  color: var(--text-color--light);
+}
+.realityFacts {
+  background-color: var(--green500);
+  color: var(--text-color--light);
+}
+
+
+

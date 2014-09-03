@@ -1,0 +1,26 @@
+
+/*
+ * WHY?
+ *
+ * HOW?
+ *
+ * REALITY
+ *
+ */
+
+
+.Thoughtcheck {
+
+}
+
+
+.Thoughtcheck-instruction {
+/*  width: 80%;
+  float: left;*/
+  padding-bottom: 0.333em;
+  border-bottom: 1px solid var(--textDivider)
+}
+.Thoughtcheck-linkbar {
+/*  width:15%;
+  float: right;*/
+}

@@ -1,0 +1,15 @@
+{
+  "name": "drmg",
+  "version": "0.0.1",
+  "description": "the vibe",
+  "style": "connection.css",
+  "keywords": [
+    "css",
+    "atmosphere",
+    "emotion",
+    "vibe"
+  ],
+  "author": {
+    "name": "@howzus Matt Mischewski"
+  }
+}

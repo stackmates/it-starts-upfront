@@ -1,0 +1,40 @@
+<ion-view title="Register">
+  <ion-content has-header="true" padding="true">
+
+    <form class="Form Form--inline Form--simple" no-validate accept-charset="utf-8"
+      name="signupForm" ng-submit="register()" >
+
+        <div class="Form-item">
+          <label class="Form-label" for="user.name">Name</label>
+          <input type="text"
+            class="Form-input" id="user.name"
+            placeholder="Name"
+            ng-model="user.nick"
+            required >
+        </div>
+        <div class="Form-item">
+          <label class="Form-label" for="user.email">Email</label>
+          <input type="email"
+            class="Form-input" id="user.email"
+            placeholder="yourname@email.com"
+            ng-model="user.email"
+            required >
+        </div>
+        <div class="Form-item">
+          <label class="Form-label" for="user.password">Password</label>
+          <input type="password"
+            class="Form-input" id="user.password"
+            placeholder="Password"
+            ng-model="user.password"
+            required >
+        </div>
+        <div class="Form-item Form-item--full">
+          <input type="submit" class="Button" value="Register">
+          <button class="Button Button--quiet" ui-sref='app.login'>Log in</button>
+        </div>
+
+    </form>
+
+
+  </ion-content>
+</ion-view>

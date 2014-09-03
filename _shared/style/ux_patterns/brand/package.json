@@ -1,0 +1,15 @@
+{
+  "name": "drmg-brand",
+  "version": "0.0.1",
+  "description": "Dreamineering Brand",
+  "style": "brand.css",
+  "keywords": [
+    "css",
+    "dreamineering",
+    "bem",
+    "brand"
+  ],
+  "author": {
+    "name": "@howzus Matt Mischewski"
+  }
+}

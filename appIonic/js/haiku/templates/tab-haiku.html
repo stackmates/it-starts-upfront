@@ -1,0 +1,9 @@
+<ion-view title="Haiku">
+  <ion-content class="has-header">
+    <ion-list>
+      <ion-item ng-repeat="haiku in haikuList" type="item-text-wrap" href="#/tab/haiku/{{haiku.flow}}">
+        {{haiku.haikuHeading}}
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

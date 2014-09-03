@@ -1,0 +1,31 @@
+
+ /*
+  * PRINCIPLES
+  *
+  * Modularity
+  * Cohesion
+  * Composable and configurable
+  * Loose coupling
+  * Soft encapsulation
+  *
+  * Follow guidelines for suit.css at http://suitcss.github.io
+  *
+  * Write small, independent components that are well documented to describe
+  * how the components should be used, and why specific CSS properties are needed
+  * in the implementation.
+  *
+  * DO NOT ASSUME THAT CSS IS SELF-DOCUMENTING
+  *
+  */
+
+@import "./src/projects/dreamineering/_shared/style";
+@import "./src/common/style/rework/layout/slide_menu_layout";
+
+/*Organisms*/
+@import "./src/common/ux_patterns/main_footer";
+@import "./src/common/ux_patterns/timeline";
+@import "./src/common/ux_patterns/site_nav";
+
+/*site ux patterns*/
+@import "./src/common/ux_patterns/menu_slide";
+

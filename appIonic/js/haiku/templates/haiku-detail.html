@@ -1,0 +1,18 @@
+<!--
+  This template loads for the 'tab.friend-detail' state (app.js)
+  'firend' is a $scope variable created in the FriendsCtrl controller (controllers.js)
+  The FriendsCtrl pulls data from the Friends service (service.js)
+  The Friends service returns an array of friend data
+-->
+<ion-view title="{{haiku.haikuHeading}}">
+  <ion-content has-header="true" padding="true">
+    <div class="card">
+      <p
+        ng-if='haiku.intro'
+        ng-bind-html='haiku.intro'></p>
+      <blockquote
+        ng-if='haiku.haikuThought'
+        ng-bind-html='haiku.haikuThought'></blockquote>
+    </div>
+  </ion-content>
+</ion-view>

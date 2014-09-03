@@ -1,0 +1,16 @@
+
+
+.markdown a {
+  border-bottom: var(--link-underlineThickness) solid;
+  padding-bottom: var(--link-underlineThickness);
+  color: inherit;
+}
+
+
+.markdown a:hover,
+.markdown a:focus,
+.markdown a:active {
+  color: inherit;
+  /*text-decoration: none !important;*/
+  border-bottom: var(--link-underlineThickness) solid transparent;
+}

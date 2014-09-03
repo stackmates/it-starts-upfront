@@ -1,0 +1,36 @@
+<div>
+
+  <ul class='SlideNavList'>
+    <li class="SlideNavList-item NavigableList-item SlideNavList-item--home"
+      ui-sref-active="active">
+
+      <a class='SlideNavList-button'
+        ui-sref="app.home"
+        slide-menu-return="left">Home <i class="icon ion-home"></i></a>
+
+    </li>
+    <li class="SlideNavList-item NavigableList-item SlideNavList-item--settings"
+       ui-sref-active="active" ng-if="user.nick">
+
+      <a class='SlideNavList-button'
+        ui-sref="app.account"
+        slide-menu-return="left">{{ user.nick }} <i class="icon ion-settings"></i></a>
+
+    </li>
+    <li class="SlideNavList-item NavigableList-item SlideNavList-item--logout"
+       ui-sref-active="active" ng-if="user.nick">
+
+      <a class='SlideNavList-button'
+        ng-click="logout()" slide-menu-return="left">Logout</a>
+
+    </li>
+    <li class="SlideNavList-item NavigableList-item SlideNavList-item--login"
+       ui-sref-active="active" ng-if="!user.nick">
+
+      <a class='SlideNavList-button'
+        ui-sref="app.login" slide-menu-return="left">Login</a>
+
+    </li>
+  </ul>
+
+</div>

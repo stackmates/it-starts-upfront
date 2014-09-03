@@ -1,0 +1,12 @@
+{
+  "name": "commonproject",
+  "style": "common_manifest.css",
+  "keywords": [
+    "css",
+    "animation",
+    "fade"
+  ],
+  "author": {
+    "name": "@howzus Matt Mischewski"
+  }
+}

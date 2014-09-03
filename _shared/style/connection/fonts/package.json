@@ -1,0 +1,19 @@
+{
+  "name": "zk-fonts",
+  "version": "0.0.1",
+  "description": "ZK fonts",
+  "main": "index.html",
+  "style": "fonts.css",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:dreamineering/zk-fonts.git"
+  },
+  "keywords": [
+    "css",
+    "ztylekitchen",
+    "normalize"
+  ],
+  "author": {
+    "name": "@howzus Matt Mischewski"
+  }
+}

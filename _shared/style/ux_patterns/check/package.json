@@ -1,0 +1,15 @@
+{
+  "name": "thoughtcheck",
+  "version": "0.0.1",
+  "description": "the vibe",
+  "style": "check.css",
+  "keywords": [
+    "css",
+    "atmosphere",
+    "emotion",
+    "vibe"
+  ],
+  "author": {
+    "name": "@howzus Matt Mischewski"
+  }
+}

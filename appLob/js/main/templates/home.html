@@ -1,0 +1,50 @@
+<header class='u-cf u-z4 u-sizeFullHeight Banner {{ home.haikuBanner.bannerPalette }}' role='banner'>
+
+    <div class="Banner-intro">
+      <div class='u-pullBottomNO'>
+        <div class='_site-width'>
+          <div class='_copy-width'>
+
+
+            <h1 class='u-textCenter'>{{ home.haikuBanner.bannerSubHeading }}</h1>
+
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+</header>
+
+
+<div class='__content content' role='main'>
+
+  <div ng-repeat='content in home.haikuExternal'>
+  <section class='__section {{content.palette}}'>
+
+      <div class='_site-width'>
+
+        <div class='_copy-width u-textCenter'>
+
+          <h2 class="u-textCenter u-marginBn u-marginTn">{{ content.haikuHeading }}</h2>
+
+          <blockquote class='t-important'
+            ng-bind-html="content.haikuThought">
+          </blockquote>
+
+          <h4 class='u-textCenter u-marginBn u-marginTn'>
+            <a href="#/tab/haiku/{{haiku.flow}}"
+              ng-bind-html="content.haikuAction">
+            </a>
+          </h4>
+
+        </div>
+
+      </div>
+
+  </section>
+  </div>
+
+
+</div>
