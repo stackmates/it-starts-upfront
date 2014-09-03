@@ -1,32 +1,37 @@
 
 
 module.exports = {
-  ghpages                :  './ghpages/dreamineering/mobile',
-  baseURL                :  'mob.dreamineering.com',
-  contentDir             :  '/Users/wik/googledrive/dreams/private/dreamineering.com/external/',
-  browserifyEntry        :  './src/projects/dreamineering/appIonic/js/index.js',
-  browserifySpecs        :  './src/projects/dreamineering/appIonic/**/*.spec.js',
-  cordova                :  './src/projects/dreamineering/appIonic/cordova/**/*',
-  styleEntry             :  './src/projects/dreamineering/appIonic/style/ionic.app.scss',
-  watchJS                :  './src/projects/dreamineering/appIonic/js/**/*.js',
-  indexHtml              :  './src/projects/dreamineering/appIonic/index.html',
-  jsonData               :  './src/projects/dreamineering/appIonic/data/**/*.json',
+  ghpages                :  './ghpages/itstartsupfront/mobile',
+  baseURL                :  'mob.itstartsupfront.com',
+  contentDir             :  '/Users/wik/googledrive/dreams/private/itstartsupfront/external/',
+  browserifyEntry        :  './src/projects/itstartsupfront/appIonic/js/index.js',
+  browserifySpecs        :  './src/projects/itstartsupfront/appIonic/**/*.spec.js',
+  cordova                :  './src/projects/itstartsupfront/appIonic/cordova/**/*',
+  styleEntry             :  './src/projects/itstartsupfront/appIonic/style/ionic.app.scss',
+  watchJS                :  './src/projects/itstartsupfront/appIonic/js/**/*.js',
+  indexHtml              :  './src/projects/itstartsupfront/appIonic/index.html',
+  jsonData               :  './src/projects/itstartsupfront/appIonic/data/**/*.json',
   templatesHtmlIn        :  [
-                              './src/projects/dreamineering/appIonic/js/**/*.html',
-                              './src/projects/dreamineering/_shared/angular/**/*.html'
+                              './src/projects/itstartsupfront/appIonic/js/**/*.html',
+                              './src/projects/itstartsupfront/_shared/angular/**/*.html'
                             ],
-  templatesJsOut         :  './src/projects/dreamineering/appIonic/js/templates',
-  karmaTestHelpers       :  './src/projects/dreamineering/appIonic/test/helpers/**/*.js',
-  images                 :  [ './src/projects/dreamineering/_shared/images/**/*' ],
+  templatesJsOut         :  './src/projects/itstartsupfront/appIonic/js/templates',
+  karmaTestHelpers       :  './src/projects/itstartsupfront/appIonic/test/helpers/**/*.js',
+  images                 :  [
+                              './src/projects/itstartsupfront/_shared/images/**/*'
+                            ],
   fonts                  :  [ './src/common/fonts/**/*' ],
-  icons                  :  [ './src/common/icons/**/*', 'src/projects/dreamineering/_shared/icons/**/*' ],
-  data                   :  [
-                              'src/projects/dreamineering/_shared/data/metalsmith_out/**/*'
+  icons                  :  [
+                              './src/common/icons/**/*',
+                              'src/projects/itstartsupfront/_shared/icons/**/*'
                             ],
-  meta                   :  './src/projects/dreamineering/_shared/meta',
+  data                   :  [
+                              'src/projects/itstartsupfront/_shared/data/metalsmith_out/**/*'
+                            ],
+  meta                   :  './src/projects/itstartsupfront/_shared/meta',
   watchStyles            :  [
                               'src/common/style/sass/ionic/**/*.scss',
-                              'src/projects/dreamineering/appIonic/**/*.scss'
+                              'src/projects/itstartsupfront/appIonic/**/*.scss'
                             ]
 };
 
