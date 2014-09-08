@@ -17,10 +17,10 @@
   --t-BannerHeadingSofaAndUp:           40px;
   --t-BannerHeadingOffice:              50px;
 
-  --sectionPaddingPocket:               4em 0 4.4em;
-  --sectionPaddingPurseAndUp:           4em 0 4.4em;
-  --sectionPaddingSofaAndUp:            6em 0 6em;
-  --sectionPaddingOfficeAndUp:          3em 0 3.6em;
+  --sectionPaddingPocket:               3em 0 3.2em;
+  --sectionPaddingPurseAndUp:           2em 0 3.2em;
+  --sectionPaddingSofaAndUp:            2em 0 3em;
+  --sectionPaddingOfficeAndUp:          1.6em 0 3em;
 
   /* Z INDEX */
   --zIndex-1:   100;
@@ -52,6 +52,15 @@
   --spaceMedium:                      10px;
   --spaceLarge:                       20px;
   --spaceXlarge:                      40px;
+
+ /*
+  * BL - Bottom Left
+  * BR - Bottom Right
+  *
+  */
+  --absLayoutTop:                      20px;
+  --absLayoutBottom:                   20px;
+  --absLayoutLeftRight:                30px;
 
 }
 

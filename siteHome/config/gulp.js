@@ -1,39 +1,39 @@
 
 
 module.exports = {
-  ghpages                 :   'ghpages/itstartsupfront/home',
-  baseURL                 :   'itstartsupfront.com',
-  contentDir              :   '/Users/wik/googledrive/dreams/private/itstartsupfront/external/',
-  sheets                  :   ['1i0d9IogJ1fBAokYkeo4cvS0G36SLHOEt6XonnRbW8BY'],
-  browserifyEntry         :   './src/projects/itstartsupfront/siteHome/js/index.js',
-  styleEntry              :   './src/projects/itstartsupfront/siteHome/style/main.css',
-  images                  :   [ './src/projects/itstartsupfront/common/images/**/*' ],
+  ghpages                 :   'ghpages/[your-domain]/home',
+  baseURL                 :   '[your-domain].com',
+  contentDir              :   '/Users/[you]/googledrive/[your-path]/[your-domain]/external/',
+  sheets                  :   ['google-sheets-id'],
+  browserifyEntry         :   './src/projects/[your-domain]/siteHome/js/index.js',
+  styleEntry              :   './src/projects/[your-domain]/siteHome/style/main.css',
+  images                  :   [ './src/projects/[your-domain]/common/images/**/*' ],
   fonts                   :   [ 'src/common/fonts/**/*' ],
   icons                   :   [
                                 'src/common/icons/**/*',
-                                'src/projects/itstartsupfront/_shared/icons/**/*'
+                                'src/projects/[your-domain]/_shared/icons/**/*'
                               ],
   data                    :   [
                                 // 'src/common/data/**/*',
-                                'src/projects/itstartsupfront/_shared/data/metalsmith_in'
+                                'src/projects/[your-domain]/_shared/data/metalsmith_in'
                               ],
-  dataOut                 :   './src/projects/itstartsupfront/_shared/data/metalsmith_out',
-  meta                    :   './src/projects/itstartsupfront/_shared/meta',
+  dataOut                 :   './src/projects/[your-domain]/_shared/data/metalsmith_out',
+  meta                    :   './src/projects/[your-domain]/_shared/meta',
   watchScripts            :   [
                                 './src/common/util_modules/**/*.js',
                                 './src/common/ux_patterns/**/*.js',
-                                './src/projects/itstartsupfront/**/*.js'
+                                './src/projects/[your-domain]/**/*.js'
                               ],
   watchStyles             :   [
                                 './src/common/style/rework/**/*.css',
                                 './src/common/ux_patterns/**/*.css',
-                                './src/projects/itstartsupfront/**/*.css'
+                                './src/projects/[your-domain]/**/*.css'
                               ],
   fetchSitePartials       :   [
-                                './src/projects/itstartsupfront/_shared/templates/partials/**/*.hbs'
+                                './src/projects/[your-domain]/_shared/templates/partials/**/*.hbs'
                               ],
   fetchSitePages          :   [
-                                './src/projects/itstartsupfront/_shared/templates/pages/**/*.hbs'
+                                './src/projects/[your-domain]/_shared/templates/pages/**/*.hbs'
                               ],
   metalsmithCollections   :   {
                                 sheets: { pattern: 'sheets.json' },

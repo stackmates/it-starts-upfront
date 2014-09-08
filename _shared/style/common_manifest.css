@@ -71,6 +71,5 @@
 
 /* bespoke stuff */
 
-@import "../../../../projects/dreamineering/_shared/style/ux_patterns/markdown";
-@import "../../../../projects/dreamineering/_shared/style/ux_patterns/check";
+@import "./ux_patterns/markdown";
 
