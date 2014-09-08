@@ -3,7 +3,6 @@
 
 @import "./src/projects/[your-domain]/_shared/style";
 
-/*@import "./src/projects/dreamineering/_shared/style/ux_/check";*/
 
 /*Organisms*/
 @import "./src/common/ux_patterns/main_footer";

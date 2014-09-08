@@ -1,10 +1,11 @@
 
 'use strict';
 
-var classie = require('classie');
+
 var dom = require('domquery');
 var FastClick = require('fastclick');
 
+var classie = require('../../../../common/util_modules/sm_classie');
 var smoothScroll = require('../../../../common/util_modules/sm_scroll_smooth');
 require('../../../../common/ux_patterns/site_nav_overlay')();
 

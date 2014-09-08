@@ -18,7 +18,7 @@
   *
   */
 
-@import "./src/projects/dreamineering/_shared/style";
+@import "./src/projects/[your-domain]/_shared/style";
 @import "./src/common/style/rework/layout/slide_menu_layout";
 
 /*Organisms*/
