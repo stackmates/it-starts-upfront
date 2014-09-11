@@ -1,0 +1,56 @@
+{{> _html}}
+
+<div class='__page-container'>
+
+  {{> m_TopBar--overlay }}
+  {{> m_SiteNav--overlay }}
+
+  <header class='u-z200 u-sizeFullHeight Banner {{{ palette }}}' role='banner'>
+
+    <div class='_site-width'>
+      <div class='_copy-width'>
+
+        <div class="Banner-intro">
+
+          <div class='u-pullBottom'>
+            {{#if metaShowLogo }}
+            <div class="u-center brand-logo logo--white">
+              {{> a_Logo }}
+            </div>
+            {{/if }}
+
+            <h1 class='t-BannerHeading'>{{{ heading }}}<br><span class='u-lightText'>{{ subheading }}</span></h1>
+
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+  </header>
+
+  <div class='__content-container'>
+
+    <div class='__content content' role='main'>
+
+      <div class='u-cf'>
+      {{#each collections.internalAffirm }}
+
+        {{> o_Card--affirm }}
+
+      {{/each}}
+      </div>
+
+
+    </div>
+
+  </div>
+
+  {{> o_Footer }}
+
+</div>
+
+
+{{> _close}}

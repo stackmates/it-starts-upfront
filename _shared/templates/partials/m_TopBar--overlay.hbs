@@ -1,0 +1,12 @@
+<nav data-scroll-header data-js='trigger-overlay' id='trigger-overlay' class='SiteNav {{ this.mindset }} {{ this.section }}'>
+  <div class="SiteNav__bar">
+    <a class='_SiteNav__logo SiteNav__a' href="/">{{> a_Logo }}</a>
+    {{#if returnLink }}
+      <a class="_SiteNav__returnlink u-linkBorderBottom" href="../">{{ returnLink }}</a>
+    {{else}}
+      <a class="_SiteNav__toggle toggle u-linkClean" href="#">
+        <div class="toggle__patty"></div>
+      </a>
+    {{/if}}
+  </div>
+</nav>

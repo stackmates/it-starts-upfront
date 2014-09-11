@@ -1,0 +1,13 @@
+<div data-js='SiteNavOverlay' class="SiteNavOverlay SiteNavOverlay--drmg">
+  <nav class="SiteNavOverlay-nav">
+    <ul>
+      {{#collections.sheets }}
+      {{#data }}
+      {{#mainmenu }}
+      <li><a class='u-linkClean' href={{ this.url }}>{{ this.title }}</a></li>
+      {{/mainmenu }}
+      {{/data }}
+      {{/collections.sheets}}
+    </ul>
+  </nav>
+</div>

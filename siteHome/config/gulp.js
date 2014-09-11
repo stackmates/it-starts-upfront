@@ -14,7 +14,6 @@ module.exports = {
                                 'src/projects/[your-domain]/_shared/icons/**/*'
                               ],
   data                    :   [
-                                // 'src/common/data/**/*',
                                 'src/projects/[your-domain]/_shared/data/metalsmith_in'
                               ],
   dataOut                 :   './src/projects/[your-domain]/_shared/data/metalsmith_out',
@@ -29,12 +28,14 @@ module.exports = {
                                 './src/common/ux_patterns/**/*.css',
                                 './src/projects/[your-domain]/**/*.css'
                               ],
-  fetchSitePartials       :   [
-                                './src/projects/[your-domain]/_shared/templates/partials/**/*.hbs'
+  templates               :   [
+                                './src/projects/[your-domain]/_shared/templates'
                               ],
-  fetchSitePages          :   [
-                                './src/projects/[your-domain]/_shared/templates/pages/**/*.hbs'
-                              ],
+  handlebarsHelpers       :     '../src/projects/[your-domain]/_shared/templates/helpers',
+  metalsmithTemplates     :   {
+                                engine:      'handlebars',
+                                directory:   '../src/projects/[your-domain]/_shared/templates'
+                              },
   metalsmithCollections   :   {
                                 sheets: { pattern: 'sheets.json' },
                                 externalProvoke: { pattern: 'haiku/_loop_external/provoke/*.md', sortBy: 'flow' },

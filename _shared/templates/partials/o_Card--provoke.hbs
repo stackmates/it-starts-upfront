@@ -1,0 +1,152 @@
+<div class="Card" id="step-{{ this.flow }}">
+  <div class="Card-haiku" >
+
+      <section class='__section Haiku {{ this.mindset }} {{ this.palette }}'>
+
+        <div class='_site-width'>
+          <div class='_copy-width'>
+
+              {{#if this.haikuHeading }}<h2 class="u-textCenter u-marginBn u-marginTn">{{{ this.haikuHeading }}}</h2> {{/if}}
+
+              {{#if this.haikuThought }}
+                <blockquote class='t-important u-textCenter'>{{{ this.haikuThought }}}</blockquote>
+              {{/if}}
+
+
+              <h5 class='u-textCenter u-marginBn u-marginTn'>
+                <a data-step='step-{{ this.flow }}' data-js='haikuaction' class='u-linkBorderBottom' href='#'>{{{ this.haikuAction }}}</a>
+              </h5>
+
+
+              <div class='u-bottomRight'>
+                <a class='u-linkClean' href="#step-{{ this.nextStep }}" data-scroll >
+                  <i class="icon ion-chevron-down"></i>
+                </a>
+              </div>
+
+          </div>
+        </div>
+
+      </section>
+
+  </div>
+  <div class="Card-details is-hidden">
+
+      <header class='__section u-z200 u-sizeFullHeight Banner {{palette}}'>
+
+        <div class='_site-width'>
+          <div class='_copy-width'>
+
+            <div class="Banner-intro">
+              <h1>{{{ this.haikuAction }}}</h1>
+
+              <p>{{{ this.haikuThought }}}</p>
+
+            </div>
+
+          </div>
+        </div>
+
+      </header>
+
+      <section class='__section'>
+
+        <div class='_site-width'>
+          <div class='_copy-width markdown'>
+
+            {{{ this.contents }}}
+
+            <ol class='u-paddingBl'>
+              <li>
+                <div class='Thoughtcheck u-paddingVl u-cf'>
+                  <p class='Thoughtcheck-instruction'>
+                    <strong>{{ this.main01Check }}:</strong> {{{ this.main01CheckInstruction }}}
+                  </p>
+                  <div class="Thoughtcheck-linkbar">
+                    <a class='u-linkClean' target='_blank' href={{{ this.main01CheckLink }}}>
+                      <i class="icon ion-ios7-information-outline"></i>
+                    </a>
+                    <a class='u-linkClean' target='_blank' href={{ this.affirmationLink }}>
+                      <i class="icon ion-ios7-compose-outline u-pullRight"></i>
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class='Thoughtcheck u-paddingVl'>
+                  <p class='Thoughtcheck-instruction'>
+                    <strong>{{{ this.main02Check }}}:</strong>  {{{ this.main02CheckInstruction }}}
+                  </p>
+                  <div class="Thoughtcheck-linkbar">
+                    <a class='u-linkClean' target='_blank' href={{{ this.main02CheckLink }}}>
+                      <i class="icon ion-ios7-information-outline"></i>
+                    </a>
+                    <a class='u-linkClean' target='_blank' href={{ this.affirmationLink }}>
+                      <i class="icon ion-ios7-compose-outline u-pullRight"></i>
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class='Thoughtcheck u-paddingVl'>
+                  <p class='Thoughtcheck-instruction'>
+                    <strong>{{{ this.main03Check }}}:</strong> {{{ this.main03CheckInstruction }}}
+                  </p>
+                  <div class="Thoughtcheck-linkbar">
+                    <a class='u-linkClean' target='_blank'href={{{ this.main03CheckLink }}}>
+                      <i class="icon ion-ios7-information-outline"></i>
+                    </a>
+                    <a class='u-linkClean' target='_blank' href={{ this.affirmationLink }}>
+                      <i class="icon ion-ios7-compose-outline u-pullRight"></i>
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class='Thoughtcheck u-paddingVl'>
+                  <p class='Thoughtcheck-instruction'>
+                    <strong>{{{ this.main04Check  }}}:</strong> {{{ this.main04CheckInstruction }}}
+                  </p>
+                  <div class="Thoughtcheck-linkbar">
+                    <a class='u-linkClean' target='_blank' href={{{ this.main04CheckLink }}}>
+                      <i class="icon ion-ios7-information-outline"></i>
+                    </a>
+                    <a class='u-linkClean' target='_blank' href={{ this.affirmationLink }}>
+                      <i class="icon ion-ios7-compose-outline u-pullRight"></i>
+                    </a>
+                  </div>
+                </div>
+              </li>
+            </ol>
+
+
+            <div class='u-bottomLeft'>
+                <a href="#"
+                   class='u-linkClean'
+                   data-step='step-{{ this.flow }}'
+                   data-next='step-{{ this.flow  }}'
+                   data-js='haikuaction'>
+                  <i class="icon ion-chevron-left"></i>
+                </a>
+            </div>
+
+            <div class='u-bottomRight'>
+              <a class='u-linkClean' href="#step-{{ this.nextStep }}" data-scroll >
+                <i class="icon ion-chevron-down"></i>
+              </a>
+            </div>
+
+
+            <blockquote class='u-paddingBl'>
+              <p>{{{ this.mainQuote }}}</p>
+              <cite><a href={{{ this.mainQuoteInsightLink}}}>{{{ this.mainQuoteCite }}}</a></cite>
+            </blockquote>
+
+          </div>
+
+        </div>
+
+      </section>
+
+  </div><!-- end Card-haihu -->
+</div><!-- end Card -->

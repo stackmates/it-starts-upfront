@@ -1,0 +1,24 @@
+<script src="/assets/js/app.js"></script>
+
+<script type="text/javascript">
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/platform.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
+
+<script>
+   // ensure all non-essential stuff is loaded after window.load
+    // http://www.feedthebot.com/pagespeed/defer-loading-javascript.html
+    if (window.addEventListener)
+      window.addEventListener("load", afterWindowLoad, false);
+    else if (window.attachEvent)
+      window.attachEvent("onload", afterWindowLoad);
+    else
+      window.onload = afterWindowLoad;
+
+    function afterWindowLoad() {
+    }
+
+</script>

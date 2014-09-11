@@ -25,7 +25,7 @@ module.exports = /*@ngInject*/
       if(content !== null) {
         deferred.resolve(content);
       } else {
-        $http.get('assets/data/dreamineering.com.json')
+        $http.get('assets/data/[your-domain].json')
           .success(function(result){
             deferred.resolve(result);
           })

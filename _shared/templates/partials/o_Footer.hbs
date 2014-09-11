@@ -1,0 +1,56 @@
+<!-- Footer -->
+<footer data-js="footer" class="__Pagefooter Pagefooter" role="contentinfo">
+  {{#collections.sheets }}
+  <section class='__section'>
+
+    <div class="Pagefooter-nav _site-width">
+
+
+     <div class="_copy-width _copy-width--footer">
+
+        <ul class='u-pullLeft NavList'>
+        {{#data }}
+        {{#mainmenu }}
+          <li><a class='u-linkClean' href={{ this.url }} >{{ this.title }}</a></li>
+        {{/mainmenu }}
+        {{/data }}
+        </ul>
+
+        <ul class="u-pullRight u-paddingRl NavList">
+          {{#if this.data.site.link1 }}
+            <li><a class='u-linkClean' href={{ this.data.site.link1 }} >{{ this.data.site.linktext1 }}</a></li>
+          {{/if }}
+          {{#if this.data.site.link2 }}
+            <li><a class='u-linkClean' href={{ this.data.site.link2 }} >{{ this.data.site.linktext2 }}</a></li>
+          {{/if }}
+          {{#if this.data.site.link3 }}
+            <li><a class='u-linkClean' href={{ this.data.site.link3 }} >{{ this.data.site.linktext3 }}</a></li>
+          {{/if }}
+        </ul>
+      </div>
+
+    </div>
+
+    <h3 class='Pagefooter-cta u-textCenter'>
+      <a class='u-linkClean' href="/haiku">{{{ this.data.site.footercta }}}</a>
+    </h3>
+
+{{!--     <h4 class='u-textCenter'>
+      <a class='u-linkClean' target='_blank' href={{ this.data.site.contactemaillink }}>{{ this.data.site.contactemail }}</a>
+    </h4> --}}
+
+
+
+  </section>
+
+  <div class='u-cf u-paletteBody'>
+    <div class='_site-width'>
+
+      <p class='u-marginAn u-paddingAl'>&copy; {{getYear}} {{{ this.data.site.company }}}
+        <span class="u-hidden"><span class="g-plusone" data-annotation="none"></span></span>
+      </p>
+
+    </div>
+  </div>
+  {{/collections.sheets}}
+</footer>
