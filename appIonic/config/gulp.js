@@ -32,7 +32,8 @@ module.exports = {
   watchStyles            :  [
                               'src/common/style/sass/ionic/**/*.scss',
                               'src/projects/[your-domain]/appIonic/**/*.scss'
-                            ]
+                            ],
+  handlebarsHelpers       :   '../src/projects/[your-domain]/_shared/templates/helpers'
 };
 
 

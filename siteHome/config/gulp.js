@@ -1,5 +1,3 @@
-
-
 module.exports = {
   ghpages                 :   'ghpages/[your-domain]/home',
   baseURL                 :   '[your-domain].com',

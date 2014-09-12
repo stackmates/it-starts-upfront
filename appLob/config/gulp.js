@@ -33,5 +33,9 @@ module.exports = {
                               './src/common/style/rework/**/*.css',
                               './src/common/ux_patterns/**/*.css',
                               './src/projects/[your-domain]/**/*.css'
-                            ]
+                            ],
+  handlebarsHelpers       :   '../src/projects/[your-domain]/_shared/templates/helpers'
 }
+
+
+// handlebars not needed temp work around

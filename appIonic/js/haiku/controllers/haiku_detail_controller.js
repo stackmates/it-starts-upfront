@@ -8,7 +8,7 @@ module.exports = /*@ngInject*/
       ContentService.getContent()
         .then(
           function (content) {
-            var rec = _.find(content.externalDreamineering,
+            var rec = _.find(content.externalProvoke,
               { 'flow' : parseInt($stateParams.haikuId, 10) }
             );
 
