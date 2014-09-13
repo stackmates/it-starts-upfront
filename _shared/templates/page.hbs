@@ -1,0 +1,41 @@
+{{> _html}}
+
+<div class='__page-container'>
+
+  {{> m_TopBar--overlay }}
+
+  {{> m_Header--page }}
+
+  <div class='__content-container'>
+
+    <div class='__content content' role='main'>
+
+
+      <section class='__section'>
+
+        <div class='_site-width '>
+
+          <div class='_copy-width _copy--{{ section }} markdown'>
+
+            {{{ contents }}}
+
+          </div>
+
+        </div>
+
+      </section>
+
+    </div>
+
+  </div>
+
+
+  {{> m_SiteNav--overlay }}
+
+
+  {{> o_Footer }}
+
+
+</div>
+
+{{> _close}}

@@ -1,0 +1,56 @@
+{{> _html}}
+
+
+<div class='__page-container'>
+
+  {{> m_SiteNav--overlay }}
+
+  <div class='__content-container'>
+
+    <div class='__content content' role='main'>
+
+      {{> m_Header--page }}
+
+      <h1>Example of using with google sheets</h1>
+
+      {{#collections.sheets }}
+
+        {{#data }}
+
+          {{#site}}
+
+            <section class='__section __section--{{ section }} {{ this.mindset }} {{ this.section }}'>
+
+              <div class='_site-width _site-width--{{ this.section }}'>
+
+
+                <div class='_copy-width _copy--{{ this.section }}'>
+
+
+                  <h2>{{ this.book }}</h2>
+
+                  <p>{{ this.comment }}</p>
+
+
+                </div>
+
+              </div>
+
+            </section>
+
+          {{/site}}
+        {{/data}}
+      {{/collections.sheets}}
+
+
+    </div>
+
+  </div>
+
+  {{> m_SiteNav--overlay }}
+
+  {{> o_Footer }}
+
+</div>
+
+{{> _close}}

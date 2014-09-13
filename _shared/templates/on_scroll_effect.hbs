@@ -1,0 +1,43 @@
+{{> _html}}
+
+<div class='__page-container'>
+
+  {{> m_SiteNav--overlay }}
+
+  {{> m_Header--page }}
+
+  <div class='__content-container'>
+
+    <div class='__content content' role='main'>
+
+      <section class='__section'>
+
+      {{#each collections.scrollEffect }}
+
+        <div id="cbp-so-scroller" class="cbp-so-scroller">
+          <section class="cbp-so-section">
+            <article class="cbp-so-side cbp-so-side-left">
+              <h2>{{ this.heading }}</h2>
+              {{{ this.excerpt }}}
+            </article>
+            <figure class="cbp-so-side cbp-so-side-right">
+              <img src="{{ this.imagePath }}" alt="{{ this.imageAltText }}">
+            </figure>
+          </section>
+        </div>
+      {{/each}}
+
+      </section>
+
+    </div>
+
+  </div>
+
+  {{> m_SiteNav--overlay }}
+
+  {{> o_Footer }}
+
+
+</div>
+
+{{> _close}}

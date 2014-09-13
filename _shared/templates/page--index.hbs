@@ -1,0 +1,66 @@
+{{> _html}}
+
+<div class='__page-container'>
+
+  {{> m_TopBar--overlay }}
+  {{> m_SiteNav--overlay }}
+
+  {{> m_Header--page }}
+
+  <div class='__content-container'>
+
+
+    <section class='u-paddingTxl'>
+
+      <div class='_site-width'>
+        <div class='_copy-width'>
+
+            {{{ this.contents }}}
+
+        </div>
+      </div>
+
+    </section>
+
+
+      {{#each collections.problems }}
+
+        <section class='__section {{ this.mindset }}'>
+
+          <div class='_site-width'>
+
+            <div class='_copy-width'>
+
+                <h2>
+                    <a href="/{{ this.path }}">{{{ this.heading }}}</a>
+                </h2>
+
+              {{#if this.excerpt }}
+                <p class='t-important u-textCenter'>{{{ this.excerpt }}}</p>
+              {{/if}}
+
+
+              <p class='u-textCenter'>
+                <a class='u-linkBorderBottom' href={{{ this.detailLink }}}>{{{ this.detailLinkText }}}</a>
+              </p>
+
+
+            </div>
+
+          </div>
+
+        </section>
+
+      {{/each}}
+
+
+    </div>
+
+  </div>
+
+  {{> o_Footer }}
+
+</div>
+
+{{> _close}}
+
