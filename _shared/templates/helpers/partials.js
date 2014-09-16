@@ -27,17 +27,17 @@ module.exports = function(cfg, Handlebars) {
   Handlebars.registerPartial('_scripts', scriptsTemplate);
 
 
-  // use atoms
+  // ATOMS
 
   // var [atom]Template = fs.readFileSync(atomsDir + '/' + 'atom_File.hbs', 'utf8');
   // Handlebars.registerPartial('_[atom_Name]', [atom]Template);
 
-  // use molecules
-  var excerptTemplate = fs.readFileSync(moleculesDir + '/' + 'm_Excerpt.hbs', 'utf8');
-  Handlebars.registerPartial('m_Excerpt', excerptTemplate);
+  // MOLECULES
+  // var excerptTemplate = fs.readFileSync(moleculesDir + '/' + 'm_Excerpt.hbs', 'utf8');
+  // Handlebars.registerPartial('m_Excerpt', excerptTemplate);
 
-  var headerLoopTemplate = fs.readFileSync(moleculesDir + '/' + 'm_Header--loop.hbs', 'utf8');
-  Handlebars.registerPartial('m_Header--loop', headerLoopTemplate);
+  // var headerLoopTemplate = fs.readFileSync(moleculesDir + '/' + 'm_Header--loop.hbs', 'utf8');
+  // Handlebars.registerPartial('m_Header--loop', headerLoopTemplate);
 
   var headerPageTemplate = fs.readFileSync(moleculesDir + '/' + 'm_Header--page.hbs', 'utf8');
   Handlebars.registerPartial('m_Header--page', headerPageTemplate);
@@ -48,10 +48,10 @@ module.exports = function(cfg, Handlebars) {
   var topBarOverlayTemplate = fs.readFileSync(moleculesDir + '/' + 'm_TopBar--overlay.hbs', 'utf8');
   Handlebars.registerPartial('m_TopBar--overlay', topBarOverlayTemplate);
 
-  var topBarScrollTemplate = fs.readFileSync(moleculesDir + '/' + 'm_TopBar--scroll.hbs', 'utf8');
-  Handlebars.registerPartial('m_TopBar--scroll', topBarScrollTemplate);
+  // var topBarScrollTemplate = fs.readFileSync(moleculesDir + '/' + 'm_TopBar--scroll.hbs', 'utf8');
+  // Handlebars.registerPartial('m_TopBar--scroll', topBarScrollTemplate);
 
-  // use organisms
+  // ORGANISMS
   var cardAffirmTemplate = fs.readFileSync(organismsDir + '/' + 'o_Card--affirm.hbs', 'utf8');
   Handlebars.registerPartial('o_Card--affirm', cardAffirmTemplate);
 
@@ -64,18 +64,16 @@ module.exports = function(cfg, Handlebars) {
 
   // get all the project specific partials
   var partialsDir = path.join( __dirname, '..', 'partials');
+  var filenames = fs.readdirSync(partialsDir);
 
-    var filenames = fs.readdirSync(partialsDir);
-
-    filenames.forEach(function (filename) {
-      var matches = /^([^.]+).hbs$/.exec(filename);
-      if (!matches) {
-        return;
-      }
-      var name = matches[1];
-      var template = fs.readFileSync(partialsDir + '/' + filename, 'utf8');
-      Handlebars.registerPartial(name, template);
-    });
-
+  filenames.forEach(function (filename) {
+    var matches = /^([^.]+).hbs$/.exec(filename);
+    if (!matches) {
+      return;
+    }
+    var name = matches[1];
+    var template = fs.readFileSync(partialsDir + '/' + filename, 'utf8');
+    Handlebars.registerPartial(name, template);
+  });
 
 };

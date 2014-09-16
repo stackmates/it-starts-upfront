@@ -62,6 +62,10 @@
   --absLayoutBottom:                   20px;
   --absLayoutLeftRight:                30px;
 
+
+  /* Site Nav Overlay - SNO */
+  --SNO-menuItemCount:                 3;
+
 }
 
 

@@ -1,7 +1,11 @@
+// content directory can be anything
+// you might prefer a shared markdown directory if working with non tech users
+// /Users/[your-user-name]/googledrive/[your-path]/[your-domain]/external/
+
 module.exports = {
   ghpages                 :   'ghpages/[your-domain]/home',
   baseURL                 :   '[your-domain].com',
-  contentDir              :   '/Users/[you]/googledrive/[your-path]/[your-domain]/external/',
+  contentDir              :   './src/projects/[your-domain]/siteHome/markdown/',
   sheets                  :   ['google-sheets-id'],
   browserifyEntry         :   './src/projects/[your-domain]/siteHome/js/index.js',
   styleEntry              :   './src/projects/[your-domain]/siteHome/style/main.css',
@@ -35,11 +39,24 @@ module.exports = {
                                 directory:   '../src/projects/[your-domain]/_shared/templates'
                               },
   metalsmithCollections   :   {
-                                sheets: { pattern: 'sheets.json' },
-                                externalProvoke: { pattern: 'haiku/_loop_external/provoke/*.md', sortBy: 'flow' },
-                                externalAffirm: { pattern: 'haiku/_loop_external/affirm/*.md', sortBy: 'flow' },
-                                internalProvoke: { pattern: 'haiku/_loop_internal/provoke/*.md', sortBy: 'flow' },
-                                internalAffirm: { pattern: 'haiku/_loop_internal/affirm/*.md', sortBy: 'flow' },
-                                problems: { pattern: 'philosophy/problems/details/*.md', sortBy: 'belief', reverse: true }
+                                sheets: {
+                                  pattern: 'sheets.json'
+                                },
+                                externalProvoke: {
+                                  pattern: 'cards/_loop_external/provoke/*.md',
+                                  sortBy: 'flow'
+                                },
+                                externalAffirm: {
+                                  pattern: 'cards/_loop_external/affirm/*.md',
+                                  sortBy: 'flow'
+                                },
+                                internalProvoke: {
+                                  pattern: 'cards/_loop_internal/provoke/*.md',
+                                  sortBy: 'flow'
+                                },
+                                internalAffirm: { pattern:
+                                  'cards/_loop_internal/affirm/*.md',
+                                  sortBy: 'flow'
+                                }
                               }
 }
