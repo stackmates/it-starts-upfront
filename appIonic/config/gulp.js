@@ -4,36 +4,36 @@ module.exports = {
   ghpages                :  './ghpages/[your-domain]/mobile',
   baseURL                :  'mob.[your-domain].com',
   contentDir             :  '/Users/wik/googledrive/dreams/private/[your-domain]/external/',
-  browserifyEntry        :  './src/projects/[your-domain]/appIonic/js/index.js',
-  browserifySpecs        :  './src/projects/[your-domain]/appIonic/**/*.spec.js',
-  cordova                :  './src/projects/[your-domain]/appIonic/cordova/**/*',
-  styleEntry             :  './src/projects/[your-domain]/appIonic/style/ionic.app.scss',
-  watchJS                :  './src/projects/[your-domain]/appIonic/js/**/*.js',
-  indexHtml              :  './src/projects/[your-domain]/appIonic/index.html',
-  jsonData               :  './src/projects/[your-domain]/appIonic/data/**/*.json',
+  browserifyEntry        :  './src/domain/[your-domain]/appIonic/js/index.js',
+  browserifySpecs        :  './src/domain/[your-domain]/appIonic/**/*.spec.js',
+  cordova                :  './src/domain/[your-domain]/appIonic/cordova/**/*',
+  styleEntry             :  './src/domain/[your-domain]/appIonic/style/ionic.app.scss',
+  watchJS                :  './src/domain/[your-domain]/appIonic/js/**/*.js',
+  indexHtml              :  './src/domain/[your-domain]/appIonic/index.html',
+  jsonData               :  './src/domain/[your-domain]/appIonic/data/**/*.json',
   templatesHtmlIn        :  [
-                              './src/projects/[your-domain]/appIonic/js/**/*.html',
-                              './src/projects/[your-domain]/_shared/angular/**/*.html'
+                              './src/domain/[your-domain]/appIonic/js/**/*.html',
+                              './src/domain/[your-domain]/_shared/angular/**/*.html'
                             ],
-  templatesJsOut         :  './src/projects/[your-domain]/appIonic/js/templates',
-  karmaTestHelpers       :  './src/projects/[your-domain]/appIonic/test/helpers/**/*.js',
+  templatesJsOut         :  './src/domain/[your-domain]/appIonic/js/templates',
+  karmaTestHelpers       :  './src/domain/[your-domain]/appIonic/test/helpers/**/*.js',
   images                 :  [
-                              './src/projects/[your-domain]/_shared/images/**/*'
+                              './src/domain/[your-domain]/_shared/images/**/*'
                             ],
   fonts                  :  [ './src/common/fonts/**/*' ],
   icons                  :  [
                               './src/common/icons/**/*',
-                              'src/projects/[your-domain]/_shared/icons/**/*'
+                              'src/domain/[your-domain]/_shared/icons/**/*'
                             ],
   data                   :  [
-                              'src/projects/[your-domain]/_shared/data/metalsmith_out/**/*'
+                              'src/domain/[your-domain]/_shared/data/metalsmith_out/**/*'
                             ],
-  meta                   :  './src/projects/[your-domain]/_shared/meta',
+  meta                   :  './src/domain/[your-domain]/_shared/meta',
   watchStyles            :  [
                               'src/common/style/sass/ionic/**/*.scss',
-                              'src/projects/[your-domain]/appIonic/**/*.scss'
+                              'src/domain/[your-domain]/appIonic/**/*.scss'
                             ],
-  handlebarsHelpers       :   '../src/projects/[your-domain]/_shared/templates/helpers'
+  handlebarsHelpers       :   '../src/domain/[your-domain]/_shared/templates/helpers'
 };
 
 

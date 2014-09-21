@@ -5,38 +5,38 @@
 module.exports = {
   ghpages                 :   'ghpages/[your-domain]/home',
   baseURL                 :   '[your-domain].com',
-  contentDir              :   './src/projects/[your-domain]/siteHome/markdown/',
+  contentDir              :   './src/domain/[your-domain]/siteHome/markdown/',
   sheets                  :   ['google-sheets-id'],
-  browserifyEntry         :   './src/projects/[your-domain]/siteHome/js/index.js',
-  styleEntry              :   './src/projects/[your-domain]/siteHome/style/main.css',
-  images                  :   [ './src/projects/[your-domain]/common/images/**/*' ],
+  browserifyEntry         :   './src/domain/[your-domain]/siteHome/js/index.js',
+  styleEntry              :   './src/domain/[your-domain]/siteHome/style/main.css',
+  images                  :   [ './src/domain/[your-domain]/common/images/**/*' ],
   fonts                   :   [ 'src/common/fonts/**/*' ],
   icons                   :   [
                                 'src/common/icons/**/*',
-                                'src/projects/[your-domain]/_shared/icons/**/*'
+                                'src/domain/[your-domain]/_shared/icons/**/*'
                               ],
   data                    :   [
-                                'src/projects/[your-domain]/_shared/data/metalsmith_in'
+                                'src/domain/[your-domain]/_shared/data/metalsmith_in'
                               ],
-  dataOut                 :   './src/projects/[your-domain]/_shared/data/metalsmith_out',
-  meta                    :   './src/projects/[your-domain]/_shared/meta',
+  dataOut                 :   './src/domain/[your-domain]/_shared/data/metalsmith_out',
+  meta                    :   './src/domain/[your-domain]/_shared/meta',
   watchScripts            :   [
                                 './src/common/util_modules/**/*.js',
                                 './src/common/ux_patterns/**/*.js',
-                                './src/projects/[your-domain]/**/*.js'
+                                './src/domain/[your-domain]/**/*.js'
                               ],
   watchStyles             :   [
                                 './src/common/style/rework/**/*.css',
                                 './src/common/ux_patterns/**/*.css',
-                                './src/projects/[your-domain]/**/*.css'
+                                './src/domain/[your-domain]/**/*.css'
                               ],
   templates               :   [
-                                './src/projects/[your-domain]/_shared/templates'
+                                './src/domain/[your-domain]/_shared/templates'
                               ],
-  handlebarsHelpers       :     '../src/projects/[your-domain]/_shared/templates/helpers',
+  handlebarsHelpers       :     '../src/domain/[your-domain]/_shared/templates/helpers',
   metalsmithTemplates     :   {
                                 engine:      'handlebars',
-                                directory:   '../src/projects/[your-domain]/_shared/templates'
+                                directory:   '../src/domain/[your-domain]/_shared/templates'
                               },
   metalsmithCollections   :   {
                                 sheets: {

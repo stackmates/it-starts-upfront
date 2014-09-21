@@ -5,7 +5,11 @@
 
 There is an old rugby adage that if you don't win the battle upfront you will probably lose the game and that goes for your digital presence if don't provide a compelling story and user experience that flows. This opinion is heavily influenced by repeatedly listening to [The Art of Designing for People](http://drt.fm/ryan-singer/).
 
-This is really a seed project that represent a particular **StackMates** configuration for cloning into a common build engine. The intent is that **only bespoke domain logic** should live in the project you create from this starter, and where common functionality will be pulled in from [StackMates](https://github.com/dreamineering/stackmates) ecosystem.
+
+> Discover what has value by [feeling the pain](./feel-the-pain).
+
+
+This is a  **StackMates** seed project representing that is built by common build engine. The intent is that **only bespoke domain logic** should live in the project you create from this starter, and where common functionality will be pulled in from [StackMates](https://github.com/dreamineering/stackmates) ecosystem.
 
 The intended benefit is that you can save time hunting around for common solutions and making them work in your build system and instead crack on with tackling the complexity of your domain problem.
 
