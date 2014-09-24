@@ -18,14 +18,23 @@
   *
   */
 
-@import "./src/projects/[your-domain]/_shared/style";
-@import "./src/common/style/rework/layout/slide_menu_layout";
+@import "./src/domain/[your-domain]/_shared/style";
+
+
+
+/*Screenview*/
+@import "./src/common/ux_patterns/screenviews/slide_menu_layout";
+
+
+/*Molecules*/
+@import "./src/common/ux_patterns/molecules/navigation/site_nav";
+@import "./src/common/ux_patterns/molecules/navigation/slide_nav";
+
 
 /*Organisms*/
-@import "./src/common/ux_patterns/main_footer";
-@import "./src/common/ux_patterns/timeline";
-@import "./src/common/ux_patterns/site_nav";
+@import "./src/common/ux_patterns/organisms/footers/main_footer";
+@import "./src/common/ux_patterns/organisms/timeline";
+
 
 /*site ux patterns*/
-@import "./src/common/ux_patterns/menu_slide";
 

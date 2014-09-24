@@ -1,14 +1,19 @@
-
 'use strict';
 
-
-var dom = require('domquery');
+var path      = require('path');
+var dom       = require('domquery');
 var FastClick = require('fastclick');
 
-var classie = require('../../../../common/util_modules/sm_classie');
-var smoothScroll = require('../../../../common/util_modules/sm_scroll_smooth');
-require('../../../../common/ux_patterns/site_nav_overlay')();
 
+// Reference common directory
+var COMMON = path.join(__dirname, '../../../../', 'common/');
+
+var classie      = require(COMMON + 'classie');
+var smoothScroll = require(COMMON + 'sm_scroll_smooth');
+require(COMMON + 'site_nav_overlay')();
+
+
+// Setup
 FastClick(document.body);
 smoothScroll.init();
 

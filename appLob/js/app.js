@@ -16,7 +16,7 @@ module.exports = angular.module('app', [
   'ui.router',
   'app.templates',
   'app.shared',
-  require('../../../../common/ux_patterns/menu_slide/angular').name,
+  require('ux_patterns/molecules/navigation/slide_nav/angular').name,
   require('./layout').name,
   require('../../_shared/angular/modules/auth').name,
   require('./viz').name,

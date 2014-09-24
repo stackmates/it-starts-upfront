@@ -1,23 +1,4 @@
 
-/* read this http://suitcss.github.io/  */
-
-/*
- *
- * This goal is to make patterns that can be set by variables in the local
- * structure and connection files where sensible.
- * But wherever you want more control just copy the file locally and
- * use from there.
- *
- * There are editorial issues to address, it would be nice to be able to have
- * A project 'working set' of files that are being used.
- *
- * For purposes of navigation it could be an idea to prefix app / site specific
- * in your patterns in css names eg drmgComponent
- *
- *
- */
-
-
 
 /* Settings for variables, fonts and icons */
 @import "./connection/colors";
@@ -37,11 +18,12 @@
 @import "../../../../common/style/rework/base/suit-base";
 @import "../../../../common/style/rework/base/elements";
 @import "../../../../common/style/rework/base/typography";
+@import "./ux_patterns/typography";
 
 
 /* layout */
-@import "../../../../common/style/rework/layout/basic_container";
 @import "../../../../common/style/rework/layout/sections";
+@import "../../../../common/ux_patterns/screenviews/basic_container";
 
 
 
@@ -56,20 +38,43 @@
 @import "../../../../common/style/rework/quarks/text";
 @import "../../../../common/style/rework/quarks/zindex";
 
+
 /*Atoms*/
 @import "./ux_patterns/brand";
-@import "../../../../common/ux_patterns/icons";
-@import "../../../../common/ux_patterns/button";
-@import "../../../../common/ux_patterns/toggle";
-@import "../../../../common/ux_patterns/forms";
-@import "../../../../common/ux_patterns/lists";
+@import "../../../../common/ux_patterns/atoms/icons";
+@import "../../../../common/ux_patterns/atoms/buttons";
+@import "../../../../common/ux_patterns/atoms/forms";
+@import "../../../../common/ux_patterns/atoms/lists";
+
 
 /*Molecules*/
-@import "../../../../common/ux_patterns/banners";
-@import "../../../../common/ux_patterns/card--haiku";
-@import "../../../../common/ux_patterns/navList";
+@import "../../../../common/ux_patterns/molecules/navigation/toggle";
+@import "../../../../common/ux_patterns/molecules/navigation/nav_list";
+@import "./ux_patterns/banner";
 
-/* bespoke stuff */
 
+/*Organisms*/
+@import "../../../../common/ux_patterns/organisms/cards/haiku";
+
+
+/*Domain Specific*/
 @import "./ux_patterns/markdown";
+@import "./ux_patterns/check";
 
+
+
+/*
+ *
+ * This goal is to make patterns that can be set by variables in the local
+ * structure and connection files where sensible.
+ * But wherever you want more control just copy the file locally and
+ * use from there.
+ *
+ * There are editorial issues to address, it would be nice to be able to have
+ * A project 'working set' of files that are being used.
+ *
+ * For purposes of navigation it could be an idea to prefix app / site specific
+ * in your patterns in css names eg drmgComponent
+ *
+ *
+ */

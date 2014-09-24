@@ -1,16 +1,21 @@
 
 /* read this http://suitcss.github.io/  */
 
-@import "./src/projects/[your-domain]/_shared/style";
+@import "./src/domain/[your-domain]/_shared/style";
+
+
+
+/*Molecules*/
+@import "./src/common/ux_patterns/molecules/navigation/site_nav_overlay";
+@import "./src/common/ux_patterns/molecules/navigation/site_nav";
 
 
 /*Organisms*/
-@import "./src/common/ux_patterns/main_footer";
-@import "./src/common/ux_patterns/timeline";
-@import "./src/common/ux_patterns/site_nav";
+@import "./src/common/ux_patterns/organisms/footers/main_footer";
+@import "./src/common/ux_patterns/organisms/timeline";
 
-/*site ux patterns*/
-@import "./src/common/ux_patterns/site_nav_overlay";
-@import "./src/common/ux_patterns/on_scroll_effect";
-@import "./src/common/ux_patterns/grid_gallery";
+
+/*Screenviews*/
+@import "./src/common/ux_patterns/screenviews/on_scroll_effect";
+@import "./src/common/ux_patterns/screenviews/grid_gallery";
 
