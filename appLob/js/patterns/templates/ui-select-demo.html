@@ -1,0 +1,33 @@
+<h3>UI Select</h3>
+
+
+
+<div class='d-Topbar'>
+  <nav class='d-SiteNav'>
+    <a ng-click="isCollapsed = !isCollapsed">Go to space</a>
+  </nav>
+</div>
+
+<div class='SpaceFinder' collapse="isCollapsed">
+  <div class="well well-lg">
+
+    <input type="text" ng-model='search.text'>
+
+    <div ng-repeat='org in podioList'>
+
+      <h3>{{ org.name }}</h3>
+
+      <div ng-repeat='space in org.spaces | fuzzy:search.text'>
+        <div ng-click='gotoLink(space)'>
+          <span ng-bind-html="highlight(space.name, search.text)"></span>
+        </div>
+      </div>
+
+    </div>
+
+
+  </div>
+</div>
+
+
+<!-- {{ podioList | json }} -->

@@ -1,10 +1,8 @@
 'use strict';
 
-window._ = require('lodash');
+window._ = require('lodash');  // Why?
 // var $ = require('jquery');
 var moment = require('moment');
-// var socketio = require('socket.io-client');
-
 
 module.exports = angular.module('app', [
   'ngAnimate',
@@ -12,13 +10,31 @@ module.exports = angular.module('app', [
   'ngSanitize',
   'pascalprecht.translate',
   'restangular',
-  'ui.bootstrap',
+  'formFor',
   'ui.router',
   'app.templates',
   'app.shared',
+  require('util_modules/angular/socket_io').name,
+  require('ux_patterns/atoms/buttons/angular').name,
+  require('ux_patterns/molecules/accordion/angular').name,
+  require('ux_patterns/molecules/alert/angular').name,
+  require('ux_patterns/molecules/carousel/angular').name,
+  require('ux_patterns/molecules/datepicker/angular').name,
+  require('ux_patterns/molecules/dropdown/angular').name,
+  require('ux_patterns/molecules/inputs/angular').name,
+  require('ux_patterns/molecules/modal/angular').name,
+  require('ux_patterns/molecules/navigation/pagination/angular').name,
+  require('ux_patterns/molecules/navigation/tabs/angular').name,
+  require('ux_patterns/molecules/popup/angular').name,
+  require('ux_patterns/molecules/progressbar/angular').name,
+  require('ux_patterns/molecules/rating/angular').name,
+  require('ux_patterns/molecules/timepicker/angular').name,
+  require('ux_patterns/molecules/typeahead/angular').name,
   require('ux_patterns/molecules/navigation/slide_nav/angular').name,
   require('./layout').name,
   require('../../_shared/angular/modules/auth').name,
+  require('./patterns').name,
+  require('./socket').name,
   require('./viz').name,
   // 'app.account',
   // 'app.admin',
@@ -27,7 +43,7 @@ module.exports = angular.module('app', [
 
 // .constant('baseUrl', 'http://192.168.50.4:8080' )
 .constant('AppConstants', {
-  'baseUrl': 'http://localhost:3000',
+  'baseUrl': 'http://localhost:3333',
   'homeState': 'app.home'
 })
 
@@ -57,6 +73,11 @@ module.exports = angular.module('app', [
   }
 )
 
+// Set Websockets Connnection
+.config(function ($socketProvider, AppConstants) {
+    $socketProvider.setConnectionUrl(AppConstants.baseUrl);
+  }
+)
 
 //Attach variables to $rootScope.
 .run(
@@ -74,47 +95,5 @@ module.exports = angular.module('app', [
   }
 )
 
-
-// Connect to socket.io server.
-// .run(
-//   function () {
-//     var retryInterval = 5000,
-//         retryTimer;
-
-//     (function connect() {
-//       clearInterval(retryTimer);
-
-//       var socket = global.socket = socketio.connect('', {
-//         'force new connection': true,
-//         'max reconnection attempts': Infinity,
-//         'reconnection limit': 10 * 1000
-//       });
-
-//       socket.on('connect', function () {
-//         socket.emit('info', {
-//           // modernizr: Modernizr,
-//           navigator: _.transform(navigator, function (result, val, key) {
-//             if (_.isString(val)) {
-//               result[key] = val;
-//             }
-//           })
-//         });
-//       });
-
-//       socket.on('test', function (data) {
-//         console.log(data);
-//         socket.emit('test', { hello: 'from browser world' });
-//       });
-
-//       retryTimer = setInterval(function () {
-//         if (!socket.socket.connected &&
-//             !socket.socket.connecting &&
-//             !socket.socket.reconnecting) {
-//           connect();
-//         }
-//       }, retryInterval);
-//     }());
-//   }
-// )
 
 ;

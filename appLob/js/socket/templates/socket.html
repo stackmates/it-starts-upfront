@@ -1,0 +1,29 @@
+<header class='u-cf u-z4 u-sizeFullHeight Banner engineer' role='banner'>
+
+    <div class="Banner-intro">
+      <div class='u-pullBottomNO'>
+        <div class='_site-width'>
+          <div class='_copy-width'>
+
+            <h1 class='u-textCenter'>Basic Web Socket Example</h1>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+</header>
+
+<section>
+
+  <div class="_site_width">
+    <div class="u-paddingAl">
+      <input ng-model="dataToSend">
+      <button ng-click="emitBasic()">Send</button>
+      <button ng-click="emitACK()">Send (ACK)</button>
+      <div>Server Response: {{ serverResponse }}</div>
+      <div>Server Response (ACK): {{ serverResponseACK }}</div>
+    </div>
+  </div>
+
+</section>
